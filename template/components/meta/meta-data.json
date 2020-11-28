@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_meta_meta_data",
+  "info": {
+    "name": "MetaData",
+    "icon": "robot"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string"
+    },
+    "shareImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

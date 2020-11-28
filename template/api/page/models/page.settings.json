@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "contentSections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.rich-text"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "published",
+        "draft"
+      ]
+    },
+    "metaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-data"
+    }
+  }
+}
