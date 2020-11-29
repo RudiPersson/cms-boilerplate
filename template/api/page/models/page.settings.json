@@ -17,23 +17,18 @@
     "shortName": {
       "type": "string"
     },
-    "contentSections": {
-      "type": "dynamiczone",
-      "components": [
-        "sections.rich-text"
-      ]
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "published",
-        "draft"
-      ]
-    },
     "metaData": {
       "type": "component",
       "repeatable": false,
       "component": "meta.meta-data"
+    },
+    "contentSections": {
+      "type": "dynamiczone",
+      "components": ["sections.rich-text"]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["published", "draft"]
     }
   }
 }
